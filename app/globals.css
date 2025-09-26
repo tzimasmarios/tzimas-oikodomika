@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------- Base -------- */
+:root{
+  --logo-a:#2D6BFF; /* blue */
+  --logo-b:#00C2A8; /* teal */
+}
+
+html, body { height: 100%; }
+body { @apply bg-slate-50 text-slate-900 antialiased; }
+
+/* Προσβάσιμο focus */
+:focus-visible {
+  outline: 2px solid var(--logo-a);
+  outline-offset: 2px;
+}
+
+/* -------- Brands marquee (λωρίδα συνεργατών) -------- */
+.brands-marquee{
+  overflow: hidden;
+  /* fade στις άκρες για πιο premium look */
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+          mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.brands-track{
+  display: flex;
+  gap: 3rem;
+  width: max-content;
+  animation: brand-scroll 28s linear infinite;
+}
+
+.brands-track:hover{
+  animation-play-state: paused;
+}
+
+@keyframes brand-scroll{
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}

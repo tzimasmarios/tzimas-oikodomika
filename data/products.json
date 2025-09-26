@@ -1,0 +1,145 @@
+[
+  {
+    "id": "cem-52r",
+    "name": "Τσιμέντο 52,5R (25kg)",
+    "price": 7.9,
+    "sku": "CEM52R-25",
+    "category": "cement",
+    "unit": "σακί",
+    "brand": "UltraCem",
+    "img": "/images/products/cement-52r.jpg",
+    "tags": [
+      "αντοχή",
+      "γρήγορο δέσιμο"
+    ],
+    "slug": "tsimento-52r-25kg"
+  },
+  {
+    "id": "cem-42n",
+    "name": "Τσιμέντο 42,5N (25kg)",
+    "price": 6.5,
+    "sku": "CEM42N-25",
+    "category": "cement",
+    "unit": "σακί",
+    "brand": "UltraCem",
+    "img": "/images/products/cement-42n.jpg",
+    "tags": [
+      "γενικής χρήσης"
+    ],
+    "slug": "tsimento-42n-25kg"
+  },
+  {
+    "id": "steel-rebar8",
+    "name": "Σίδερο Οπλισμού Φ8 (12m)",
+    "price": 9.8,
+    "sku": "REB8-12",
+    "category": "steel",
+    "unit": "τεμ.",
+    "brand": "HellasSteel",
+    "img": "/images/products/rebar8.jpg",
+    "tags": [
+      "B500C"
+    ],
+    "slug": "sidero-oplismou-f8-12m"
+  },
+  {
+    "id": "steel-mesh",
+    "name": "Καγκελόπλεγμα Τ131",
+    "price": 24.0,
+    "sku": "MESH-T131",
+    "category": "steel",
+    "unit": "φύλλο",
+    "brand": "HellasSteel",
+    "img": "/images/products/mesh-t131.jpg",
+    "tags": [
+      "B500C",
+      "2x5m"
+    ],
+    "slug": "kagkeloplegma-t131"
+  },
+  {
+    "id": "insul-xps",
+    "name": "XPS 5cm (0,6x1,25m)",
+    "price": 6.7,
+    "sku": "XPS-50",
+    "category": "insulation",
+    "unit": "μ2",
+    "brand": "ThermoFoam",
+    "img": "/images/products/xps-5cm.jpg",
+    "tags": [
+      "εξωτερική μόνωση"
+    ],
+    "slug": "xps-5cm-06x125"
+  },
+  {
+    "id": "insul-eps",
+    "name": "EPS 3cm (0,5x1m)",
+    "price": 2.3,
+    "sku": "EPS-30",
+    "category": "insulation",
+    "unit": "μ2",
+    "brand": "ThermoFoam",
+    "img": "/images/products/eps-3cm.jpg",
+    "tags": [
+      "οικονομικό"
+    ],
+    "slug": "eps-3cm-05x1"
+  },
+  {
+    "id": "paint-int",
+    "name": "Πλαστικό Χρώμα Εσωτερικού 9L",
+    "price": 26.9,
+    "sku": "PAINT-INT-9L",
+    "category": "paints",
+    "unit": "κουτί",
+    "brand": "Chromatex",
+    "img": "/images/products/paint-int.jpg",
+    "tags": [
+      "πλενόμενο",
+      "λευκό"
+    ],
+    "slug": "plastiko-xroma-esorterikou-9l"
+  },
+  {
+    "id": "paint-ext",
+    "name": "Ακρυλικό Εξωτερικού 10L",
+    "price": 39.5,
+    "sku": "PAINT-EXT-10L",
+    "category": "paints",
+    "unit": "κουτί",
+    "brand": "Chromatex",
+    "img": "/images/products/paint-ext.jpg",
+    "tags": [
+      "αντοχή UV"
+    ],
+    "slug": "akryliko-exoterikou-10l"
+  },
+  {
+    "id": "tool-mixer",
+    "name": "Μίξερ κονιαμάτων 1200W",
+    "price": 79,
+    "sku": "MIX-1200",
+    "category": "tools",
+    "unit": "τεμ.",
+    "brand": "ProTools",
+    "img": "/images/products/mixer-1200.jpg",
+    "tags": [
+      "δύο ταχύτητες"
+    ],
+    "slug": "mixer-koniamaton-1200w"
+  },
+  {
+    "id": "tool-trowel",
+    "name": "Σπάτουλα Ανοξείδωτη 28cm",
+    "price": 8.5,
+    "sku": "TROW-28",
+    "category": "tools",
+    "unit": "τεμ.",
+    "brand": "ProTools",
+    "img": "/images/products/trowel-28.jpg",
+    "tags": [
+      "εργονομική"
+    ],
+    "slug": "spatoula-anoxeidoti-28cm"
+  }
+]

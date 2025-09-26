@@ -1,0 +1,23 @@
+<svg width="260" height="56" viewBox="0 0 260 56" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ΤΖΙΜΑΣ">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#2D6BFF"/>
+      <stop offset="100%" stop-color="#00C2A8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Μίνιμαλ «σκαλοπάτια / bricks» -->
+  <g transform="translate(6,8)" fill="url(#g)">
+    <rect x="0"  y="28" width="12" height="12" rx="2"/>
+    <rect x="18" y="16" width="12" height="12" rx="2"/>
+    <rect x="36" y="4"  width="12" height="12" rx="2"/>
+  </g>
+
+  <!-- Λέξη-σήμα -->
+  <text x="70" y="40"
+    font-family="Inter, Poppins, Segoe UI, Arial, sans-serif"
+    font-weight="800"
+    font-size="40"
+    letter-spacing="2"
+    fill="url(#g)">ΤΖΙΜΑΣ</text>
+</svg>
