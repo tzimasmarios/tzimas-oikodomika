@@ -11,14 +11,15 @@ const SITE_URL = process.env.SITE_URL || "https://www.tzimas-oikodomika.gr";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Οικοδομικά Υλικά – Κατάλογος",
+  title: "Οικοδομικά Υλικά ΤΖΙΜΑΣ",
   description:
-    "Κατάστημα οικοδομικών υλικών: Τσιμέντα, Σίδερα, Μονώσεις, Χρώματα, Εργαλεία.",
+    "Κατάστημα οικοδομικών υλικών: Σίδερα, Μονώσεις, Υδραυλικά, Γυψοσανίδες.",
   icons: {
     icon: [
       { url: "/favicon.ico" },
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
     ],
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
