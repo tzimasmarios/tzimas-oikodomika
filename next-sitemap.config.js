@@ -1,6 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://example.gr',
+  siteUrl: 'https://www.tzimas-oikodomika.gr',
   generateRobotsTxt: true,
-  exclude: ['/admin/*'],
+  outDir: 'public',
+  sitemapSize: 5000,
 };
