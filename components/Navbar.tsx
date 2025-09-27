@@ -9,7 +9,6 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
-  // Σε ποιες διαδρομές θέλουμε ΠΑΝΤΑ χρώμα
   const forceColor =
     pathname?.startsWith("/proionta") ||
     pathname?.startsWith("/epikoinonia");
@@ -21,12 +20,11 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Κλείσε το mobile menu όταν αλλάζει σελίδα
   useEffect(() => {
     setOpen(false);
   }, [pathname]);
 
-  const colored = scrolled || forceColor; // scroll ή proionta/epikoinonia
+  const colored = scrolled || forceColor;
 
   return (
     <header
@@ -38,27 +36,31 @@ export default function Navbar() {
       ].join(" ")}
     >
       <div className="container py-3 flex items-center gap-4">
-        {/* Λογότυπο: έγχρωμο στην αρχική κορυφή, λευκό όταν colored */}
-        <Link href="/" className="flex items-center">
+        {/* Brand link: δίνουμε καθαρό brand text σε robots/assistive tech */}
+        <Link
+          href="/"
+          className="flex items-center"
+          aria-label="Οικοδομικά Υλικά ΤΖΙΜΑΣ"
+        >
           <img
             src="/images/logo-compact.svg"
-            alt={shop.name}
+            alt="ΤΖΙΜΑΣ — Οικοδομικά Υλικά"
             className={[
               "h-10 w-auto transition drop-shadow",
-              colored ? "filter brightness-0 invert" : "" // λευκό όταν είναι χρωματισμένο
+              colored ? "filter brightness-0 invert" : ""
             ].join(" ")}
           />
-          <span className="sr-only">{shop.name}</span>
+          <span className="sr-only">Οικοδομικά Υλικά ΤΖΙΜΑΣ</span>
         </Link>
 
-        {/* Desktop μενού */}
+        {/* Desktop menu */}
         <nav className="ml-auto hidden md:flex gap-6 text-sm">
           <NavLink href="/#about" label="Σχετικά" pathname={pathname} />
           <NavLink href="/proionta" label="Προϊόντα" pathname={pathname} />
           <NavLink href="/epikoinonia" label="Επικοινωνία" pathname={pathname} />
         </nav>
 
-        {/* Desktop τηλέφωνο */}
+        {/* Desktop phone */}
         <a
           href={`tel:${shop.phone.replace(/\s/g, "")}`}
           className="hidden md:inline text-sm underline hover:opacity-90"
@@ -66,7 +68,7 @@ export default function Navbar() {
           {shop.phone}
         </a>
 
-        {/* Mobile burger (δεξιά) */}
+        {/* Mobile burger */}
         <button
           aria-label={open ? "Κλείσιμο μενού" : "Άνοιγμα μενού"}
           aria-expanded={open}
@@ -81,29 +83,15 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden border-t border-white/15 bg-white text-slate-800 shadow-lg">
           <div className="container py-3 space-y-1">
-            <Link
-              href="/"
-              className="block px-2 py-2 rounded-md hover:bg-slate-50"
-              onClick={() => setOpen(false)}
-            >
+            <Link href="/" className="block px-2 py-2 rounded-md hover:bg-slate-50" onClick={() => setOpen(false)}>
               Αρχική
             </Link>
-            <Link
-              href="/proionta"
-              className="block px-2 py-2 rounded-md hover:bg-slate-50"
-              onClick={() => setOpen(false)}
-            >
+            <Link href="/proionta" className="block px-2 py-2 rounded-md hover:bg-slate-50" onClick={() => setOpen(false)}>
               Προϊόντα
             </Link>
-            <Link
-              href="/epikoinonia"
-              className="block px-2 py-2 rounded-md hover:bg-slate-50"
-              onClick={() => setOpen(false)}
-            >
+            <Link href="/epikoinonia" className="block px-2 py-2 rounded-md hover:bg-slate-50" onClick={() => setOpen(false)}>
               Επικοινωνία
             </Link>
-
-            {/* Call-to-action τηλέφωνο στο mobile */}
             <a
               href={`tel:${shop.phone.replace(/\s/g, "")}`}
               className="mt-2 inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-[#2D6BFF] to-[#00C2A8] px-3 py-2 text-white font-medium"
@@ -118,20 +106,12 @@ export default function Navbar() {
   );
 }
 
-/** Helper για active underline στα desktop links */
 function NavLink({
-  href,
-  label,
-  pathname,
-}: {
-  href: string;
-  label: string;
-  pathname?: string | null;
-}) {
+  href, label, pathname,
+}: { href: string; label: string; pathname?: string | null }) {
   const active =
     (href === "/proionta" && pathname?.startsWith("/proionta")) ||
     (href === "/epikoinonia" && pathname?.startsWith("/epikoinonia"));
-
   return (
     <Link
       href={href}
