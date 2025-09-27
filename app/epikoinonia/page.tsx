@@ -1,6 +1,11 @@
 // app/epikoinonia/page.tsx
 import shop from "@/config/shop.json";
 import CallNow from "@/components/CallNow";
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Επικοινωνία – Τζίμας Οικοδομικά",
+  description: "Επικοινωνήστε για προσφορές και παραγγελίες σε οικοδομικά υλικά.",
+};
 
 export default function ContactPage() {
   const tel = (shop as any).phone ?? "";
