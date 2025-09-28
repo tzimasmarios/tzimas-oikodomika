@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "Κατάστημα οικοδομικών υλικών: Σίδερα, Μονώσεις, Υδραυλικά, Γυψοσανίδες.",
   icons: {
     icon: [
-      { url: "/favicon.ico?v=4", rel: "shortcut icon" },             // ICO με 48px μέσα
+      { url:  "/favicon.ico?v=13" },             // ICO με 48px μέσα
       { url: "/favicon-16x16.png?v=4", sizes: "16x16", type: "image/png" },
       { url: "/favicon-32x32.png?v=4", sizes: "32x32", type: "image/png" },
       { url: "/favicon-48x48.png?v=4", sizes: "48x48", type: "image/png" },
