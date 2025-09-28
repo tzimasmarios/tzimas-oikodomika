@@ -10,8 +10,8 @@ export function JsonLd() {
     url: base,
     telephone: shop.phone,
     email: shop.email,
-    image: [`${base}/images/storefront-1200.jpg`], // βάλε πραγματική φωτο (ή βγάλ’ το)
-    logo: `${base}/images/logo-512.png`,          // τετράγωνο logo
+    image: [`${base}/images/logo-bricks-512.png`], // βάλε πραγματική φωτο (ή βγάλ’ το)
+    logo: `${base}/images/logo-bricks-512.png`,          // τετράγωνο logo
     address: {
       "@type": "PostalAddress",
       streetAddress: shop.address,
