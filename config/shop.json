@@ -9,11 +9,11 @@
   "mobile": "6946061328",
   "email": "tzimas1964@gmail.com",
   "hours": [
-    { "d": "Δευ – Παρ", "h": "07:30 – 15:00" },
-    { "d": "Σάββατο", "h": "08:00 – 14:00" },
+    { "d": "Δευ – Παρ", "h": "08:00 – 15:00" },
+    { "d": "Σάββατο", "h": "08:00 – 15:00" },
     { "d": "Κυριακή", "h": "Κλειστά" }
   ],
-  "mapEmbedSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14715.660715560372!2d20.86061199663089!3d39.1613836370991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135c3fe5dbb6d24b%3A0xb769585508109c04!2zzqTOts6vzrzOsSDOks65z4HOs865zr3Or86x!5e0!3m2!1sel!2sgr!4v1757001402265!5m2!1sel!2sgr" ,
+  "mapEmbedSrc": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24748.3488455927!2d20.863167!3d39.162361!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135c3fe5dbb6d24b%3A0xb769585508109c04!2zzqTOts6vzrzOsc-CIM6fzrnOus6_zrTOv868zrnOus6sIM6lzrvOuc66zqw!5e0!3m2!1sel!2sgr!4v1759156016263!5m2!1sel!2sgr" ,
   "social": {
     "facebook": "",
     "instagram": ""
